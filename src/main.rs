@@ -1,3 +1,4 @@
+/*
 use std::io;
 use std::cmp::Ordering;
 use rand::Rng;
@@ -15,7 +16,7 @@ fn main() {
         io::stdin().read_line(&mut guess)
             .expect("Wrong number!");
 
-        let guess: u32 = match guess.trim().parse() {
+        let guess : u16 = match guess.trim().parse() {
             Ok(num) => num,
             Err(_) => continue,
         };
@@ -32,4 +33,14 @@ fn main() {
             }
         }
     }
+}
+*/
+
+fn foo(x:u8, y:u8, z:u8) -> (u8, u8, u8){
+    return (x, y, z)
+}
+
+fn main() {
+    let tup = foo(6, 5, 3);
+    println!("{}, {}, {}", tup.0, tup.1, tup.2)
 }
