@@ -35,12 +35,33 @@ fn main() {
     }
 }
 */
+/*===================================================*/
+//Kortege und massive block
+/*
+fn foo(x:u8, y:u8, z:u8) -> [u8; 3]{
+    return [x, y, z]
+}
 
-fn foo(x:u8, y:u8, z:u8) -> (u8, u8, u8){
-    return (x, y, z)
+fn poo(x:u8, y:u8, z:u8){
+    println!("This is poo x={}, y={}, z={}", x, y, z)
 }
 
 fn main() {
-    let tup = foo(6, 5, 3);
-    println!("{}, {}, {}", tup.0, tup.1, tup.2)
+    //let tup = [77, 44, 53];
+    poo(1, 2, 3);
+    let pup = foo(4, 5, 6);
+    println!("This is foo x={}, y={}, z={}", pup[0], pup[1], pup[2])
+}
+*/
+/*=====================================================*/
+//Func with return value
+
+fn main(){
+    let x = five();
+
+    println!("Value of x qeual {}", x);
+}
+
+fn five() -> i32{
+    5
 }
