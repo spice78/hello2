@@ -57,11 +57,8 @@ fn main() {
 //Func with return value
 
 fn main(){
-    let x = five();
+   let num = true;   
+   let mun = if num{"true"}else{"false"};
 
-    println!("Value of x qeual {}", x);
-}
-
-fn five() -> i32{
-    5
+   println!("{}", mun);
 }
