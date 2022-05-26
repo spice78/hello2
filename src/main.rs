@@ -54,11 +54,39 @@ fn main() {
 }
 */
 /*=====================================================*/
-//Func with return value
-
+//IF
+/*
 fn main(){
    let num = true;   
    let mun = if num{"true"}else{"false"};
 
    println!("{}", mun);
+}
+*/
+/*====================================================*/
+//LOOP
+/*
+fn main(){
+    let mut count = 0;
+    let mut num = 35;
+    let res = loop {
+        num -= 4;
+        count += 1;
+        if num < 4 {
+            break count;
+        }
+    };
+    println!("{}", res);
+}
+*/
+
+fn main(){
+    let mut count = 0;
+    let mut num = 16;
+    while num >= 4{
+        num -= 4;
+        count += 1;
+    }    
+    
+    println!("{}", count);
 }
