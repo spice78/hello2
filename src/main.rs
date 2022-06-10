@@ -82,11 +82,21 @@ fn main(){
 
 fn main(){
     let mut count = 0;
-    let mut num = 16;
+    let mut num = 64;
+    let num2: i32 = num;
     while num >= 4{
         num -= 4;
-        count += 1;
-    }    
-    
+        count += 1;        
+    }
+
     println!("{}", count);
+    fn_for(count, num2*count, num2);
+}
+
+fn fn_for(x:i32, mut z:i32, i:i32) {    
+        
+    for y in 0..x {
+        println!("fn_for == {}",  z);
+        z -= i;
+    }    
 }
